@@ -1,0 +1,37 @@
+body {
+  background-image: url('../images/nightsky.jpg');
+  background-size: cover;
+}
+
+.home-text-and-image {
+    display: flex;
+  }
+  
+  .home-image {
+    max-width: 100%; /* Ensure the image doesn't exceed its container width */
+    margin: auto;
+  }
+  
+  .home-text {
+    flex: 1;
+    margin-right: 3%;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  h1 {
+    font-size: 8vw;
+  }
+
+  @media screen and (max-width: 930px) {
+    .home-text-and-image {
+        display: block;
+      }
+      .home-image {
+      width:max-content;
+      margin-bottom: 3rem;
+      }
+      .home-text {
+        margin-right: 0px;
+      }
+  }
